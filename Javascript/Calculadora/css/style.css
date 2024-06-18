@@ -1,0 +1,83 @@
+body {
+  background-color: #d3d3d3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3em;
+}
+
+#calc {
+  width: 400px;
+  padding: 0.5em;
+  background-color: #505050;
+  border-radius: 5px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+#calc h3 {
+  font-family: Rationale;
+  font-size: 30px;
+  letter-spacing: 1.5px;
+  color: white;
+  padding-left: 10px;
+}
+
+#operacoes {
+  text-align: right;
+  background-color: white;
+  border-radius: 5px;
+  margin: 10px 10px;
+}
+
+#operacao-anterior {
+  color: #777;
+  padding: 5px;
+  font-size: 25px;
+  overflow-wrap: break-word;
+  min-height: 25px;
+  font-family: Imbue;
+}
+
+#operacao-atual {
+  font-size: 45px;
+  min-height: 45px;
+  overflow-wrap: break-word;
+  padding: 5px;
+  font-family: Imbue;
+}
+
+#botoes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 10px 10px;
+}
+
+#botoes button {
+  border: 1.5px solid transparent;
+  height: 60px;
+  font-size: 30px;
+  background-color: #858585;
+  color: white;
+  box-shadow: 1px 1px 5px black;
+  cursor: pointer;
+  border-radius: 15px;
+  font-family: Rationale;
+}
+
+#botoes button:hover {
+    background-color: #a9a9a9;
+    border-color: black;
+}
+
+#botoes .botao-num {
+    background-color: #191919;
+    box-shadow: none;
+}
+
+#botoes #botao-igual {
+    grid-column: span 2;
+    
+}
